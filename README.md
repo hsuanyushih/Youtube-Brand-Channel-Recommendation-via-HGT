@@ -1,9 +1,12 @@
-# Youtube-Brand-Channel-Recommendation-via-HGT
+# YouTube Brand–Creator Recommendation via Heterogeneous Graph Transformer (HGT)
 
-A Heterogeneous Graph Transformer (HGT) based system for modeling collaboration relationships between YouTube brands and channels, producing Top-k brand-channel collaboration recommendations (with Samsung as an example case study). This repository corresponds to the data collection, data construction, model training, and recommendation pipeline described in the thesis.
+An end-to-end recommendation system that leverages **Large Language Models (OpenAI GPT)** for semantic brand entity extraction and **Heterogeneous Graph Transformers (HGTs)** for brand–creator link prediction on YouTube.
 
-> Thesis: *YouTube Brand-Channel Collaboration Recommendation via Heterogeneous Graph Neural Networks*
+The pipeline automatically collects YouTube videos and channel metadata through the YouTube Data API, uses LLMs to identify real-world brand mentions from unstructured video content, constructs a heterogeneous graph of creators, videos, and brands, and generates **Top-k creator recommendations** for potential brand collaborations.
 
+This repository includes the complete machine learning pipeline, covering **data collection, LLM-assisted annotation, heterogeneous graph construction, HGT model training, and recommendation generation**.
+
+> **Thesis:** *YouTube Brand–Creator Collaboration Recommendation via Heterogeneous Graph Neural Networks*
 ## Project Structure
 
 ```
